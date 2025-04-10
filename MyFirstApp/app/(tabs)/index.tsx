@@ -107,7 +107,7 @@ export default function HomeScreen() {
 
           <Button
             title="Click Me! "
-            style={{ padding: 10, borderRadius: 10, marginTop: 20 }}
+            // style={{ padding: 10, borderRadius: 10, marginTop: 20 }}
             // disabled
             color="coral"
             onPress={() => console.log("Button is Clicked!")}
