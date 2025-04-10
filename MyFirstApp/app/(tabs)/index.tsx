@@ -256,6 +256,29 @@ export default function HomeScreen() {
             </Pressable>
           </View>
         </View>
+
+        <View>
+          <Text
+            style={{
+              fontSize: 20,
+              marginTop: 20,
+              fontWeight: 600,
+              color: "#f5f5f5",
+            }}
+          >
+            Custom Button using Pressable on Text
+          </Text>
+
+          <View
+            style={{
+              display: "flex",
+              flexDirection: "row",
+              flexWrap: "wrap",
+              rowGap: 3,
+              columnGap: 10,
+            }}
+          ></View>
+        </View>
       </ScrollView>
     </View>
   );
