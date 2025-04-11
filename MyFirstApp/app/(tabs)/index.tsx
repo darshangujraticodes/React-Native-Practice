@@ -362,14 +362,33 @@ export default function HomeScreen() {
         </View>
 
         <View>
+          {/*  Last array value precendence is greater than previuos   */}
+          {/* Last style in array will take the precedence or have high priority to overirde previous style   */}
           <Text style={appStyle.text}>Multiple Styles</Text>
-
-          <View style={[appStyle.box, appStyle.deeppinkBg]}>
+          <View style={[appStyle.deeppinkBg, appStyle.box]}>
             <Text style={appStyle.boxText}>Box 1</Text>
           </View>
 
           <View style={[appStyle.box, appStyle.darkvioletBg]}>
             <Text style={appStyle.boxText}>Box 2</Text>
+          </View>
+        </View>
+
+        <View>
+          <Text style={appStyle.text}>
+            React Native Box Model Similar to Web
+          </Text>
+          <View style={[appStyle.contentCenter]}>
+            <Text style={appStyle.boxText}>Margin</Text>
+            <View style={[appStyle.contentCenter]}>
+              <Text style={appStyle.boxText}>Border</Text>
+              <View style={[appStyle.contentCenter]}>
+                <Text style={appStyle.boxText}>Padding</Text>
+                <View style={[appStyle.contentCenter]}>
+                  <Text style={appStyle.boxText}>Content</Text>
+                </View>
+              </View>
+            </View>
           </View>
         </View>
 
