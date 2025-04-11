@@ -361,6 +361,18 @@ export default function HomeScreen() {
           <Greet user="Rohit Singh" />
         </View>
 
+        <View>
+          <Text style={appStyle.text}>Multiple Styles</Text>
+
+          <View style={[appStyle.box, appStyle.deeppinkBg]}>
+            <Text style={appStyle.boxText}>Box 1</Text>
+          </View>
+
+          <View style={[appStyle.box, appStyle.darkvioletBg]}>
+            <Text style={appStyle.boxText}>Box 2</Text>
+          </View>
+        </View>
+
         {/* <StylesheetComponent /> */}
       </ScrollView>
 
