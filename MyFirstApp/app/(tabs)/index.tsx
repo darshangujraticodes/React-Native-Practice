@@ -1,4 +1,6 @@
 import Greet from "@/components/Greet";
+import { appStyle } from "@/assets/styles/AppStyles";
+
 import { useState } from "react";
 import {
   Image,
@@ -12,6 +14,7 @@ import {
   StatusBar,
   ActivityIndicator,
   Alert,
+  StyleSheet,
 } from "react-native";
 
 const logoImg1 = require("../../assets/images/pic1.jpg");
@@ -44,16 +47,7 @@ export default function HomeScreen() {
           }}
         ></View>
 
-        <Text
-          style={{
-            fontSize: 20,
-            marginTop: 20,
-            fontWeight: 600,
-            color: "#f5f5f5",
-          }}
-        >
-          Display local Image file
-        </Text>
+        <Text style={appStyle.text}>Display local Image file</Text>
         <Image
           source={logoImg1}
           style={{
@@ -64,16 +58,7 @@ export default function HomeScreen() {
           }}
         />
 
-        <Text
-          style={{
-            fontSize: 20,
-            marginTop: 20,
-            fontWeight: 600,
-            color: "#f5f5f5",
-          }}
-        >
-          Display Image from API URL
-        </Text>
+        <Text style={appStyle.text}>Display Image from API URL</Text>
         <Image
           source={{ uri: "https://picsum.photos/200" }}
           style={{
@@ -84,16 +69,7 @@ export default function HomeScreen() {
           }}
         />
 
-        <Text
-          style={{
-            fontSize: 20,
-            marginTop: 20,
-            fontWeight: 600,
-            color: "#f5f5f5",
-          }}
-        >
-          Display Text Over Image
-        </Text>
+        <Text style={appStyle.text}>Display Text Over Image</Text>
 
         <View style={{ height: 250, marginVertical: 10 }}>
           <ImageBackground
@@ -109,16 +85,7 @@ export default function HomeScreen() {
         </View>
 
         <View>
-          <Text
-            style={{
-              fontSize: 20,
-              marginTop: 20,
-              fontWeight: 600,
-              color: "#f5f5f5",
-            }}
-          >
-            Button Tag
-          </Text>
+          <Text style={appStyle.text}>Button Tag</Text>
 
           <Button
             title="Click Me! "
@@ -129,14 +96,7 @@ export default function HomeScreen() {
         </View>
 
         <View>
-          <Text
-            style={{
-              fontSize: 20,
-              marginTop: 20,
-              fontWeight: 600,
-              color: "#f5f5f5",
-            }}
-          >
+          <Text style={appStyle.text}>
             Pressable Tag : Image & Text Pressable
           </Text>
 
@@ -163,14 +123,7 @@ export default function HomeScreen() {
         </View>
 
         <View>
-          <Text
-            style={{
-              fontSize: 20,
-              marginTop: 20,
-              fontWeight: 600,
-              color: "#f5f5f5",
-            }}
-          >
+          <Text style={appStyle.text}>
             Custom Button using Pressable on Text
           </Text>
 
@@ -280,29 +233,6 @@ export default function HomeScreen() {
               color: "#f5f5f5",
             }}
           >
-            Custom Button using Pressable on Text
-          </Text>
-
-          <View
-            style={{
-              display: "flex",
-              flexDirection: "row",
-              flexWrap: "wrap",
-              rowGap: 3,
-              columnGap: 10,
-            }}
-          ></View>
-        </View>
-
-        <View>
-          <Text
-            style={{
-              fontSize: 20,
-              marginTop: 20,
-              fontWeight: 600,
-              color: "#f5f5f5",
-            }}
-          >
             ReactNative Modal Popup
           </Text>
 
@@ -363,14 +293,7 @@ export default function HomeScreen() {
         </View>
 
         <View>
-          <Text
-            style={{
-              fontSize: 20,
-              marginTop: 20,
-              fontWeight: 600,
-              color: "#f5f5f5",
-            }}
-          >
+          <Text style={appStyle.text}>
             Activity Indicator | Content Loader:
           </Text>
           <ActivityIndicator size="large" color="#ffffff" animating={true} />
@@ -433,18 +356,12 @@ export default function HomeScreen() {
         </View>
 
         <View>
-          <Text
-            style={{
-              fontSize: 20,
-              marginTop: 20,
-              fontWeight: 600,
-              color: "#f5f5f5",
-            }}
-          >
-            Custom Component
-          </Text>
+          <Text style={appStyle.text}>Custom Component</Text>
           <Greet user="Darshan Gujrati" />
+          <Greet user="Rohit Singh" />
         </View>
+
+        {/* <StylesheetComponent /> */}
       </ScrollView>
 
       {/* By default modal visible is true and animation type is none */}
