@@ -16,6 +16,7 @@ import {
   Alert,
   StyleSheet,
 } from "react-native";
+import FlexBox from "@/components/FlexBox";
 
 const logoImg1 = require("../../assets/images/pic1.jpg");
 const logoImg2 = require("../../assets/images/pic2.jpg");
@@ -23,25 +24,29 @@ const logoImg3 = require("../../assets/images/pic3.jpg");
 
 export default function HomeScreen() {
   const [isModalVisible, setIsModalVisible] = useState(false);
-  const [isStatusBarVisible, setIsStatusBarVisible] = useState(true);
+  const [isStatusBarVisible, setIsStatusBarVisible] = useState(false);
 
   return (
-    <View style={{ flex: 1, backgroundColor: "#262626", padding: 20 }}>
+    <View
+      style={{
+        flex: 1,
+        backgroundColor: "#ffff",
+        padding: 10,
+      }}
+    >
       <StatusBar
-        backgroundColor="#f5f5f5"
-        barStyle="dark-content"
+        backgroundColor="#262626"
+        barStyle="light-content"
         hidden={isStatusBarVisible}
       />
 
       <ScrollView>
-        <Text style={{ fontSize: 20, fontWeight: 600, color: "#f5f5f5" }}>
-          View Tag Card Creation
-        </Text>
+        <Text style={appStyle.text}>View Tag Card Creation</Text>
         <View
           style={{
             width: 150,
             height: 150,
-            backgroundColor: "#f5f5f5",
+            backgroundColor: "teal",
             marginVertical: 10,
             borderRadius: 10,
           }}
@@ -142,20 +147,7 @@ export default function HomeScreen() {
                 console.log("OnPress | Text Pressed");
               }}
             >
-              <Text
-                style={{
-                  backgroundColor: "mintcream",
-                  color: "#262626",
-                  padding: 10,
-                  marginTop: 10,
-                  fontSize: 18,
-                  borderRadius: 10,
-
-                  textAlign: "center",
-                }}
-              >
-                onPress()
-              </Text>
+              <Text style={appStyle.onPressButton}>onPress()</Text>
             </Pressable>
 
             <Pressable
@@ -164,20 +156,7 @@ export default function HomeScreen() {
                 console.log("OnPressIn | Text Pressed");
               }}
             >
-              <Text
-                style={{
-                  backgroundColor: "mintcream",
-                  color: "#262626",
-                  padding: 10,
-                  marginTop: 10,
-                  fontSize: 18,
-                  borderRadius: 10,
-
-                  textAlign: "center",
-                }}
-              >
-                onPressIn()
-              </Text>
+              <Text style={appStyle.onPressButton}>onPressIn()</Text>
             </Pressable>
 
             <Pressable
@@ -186,19 +165,7 @@ export default function HomeScreen() {
                 console.log("OnPressOut | Text Pressed");
               }}
             >
-              <Text
-                style={{
-                  backgroundColor: "mintcream",
-                  color: "#262626",
-                  padding: 10,
-                  marginTop: 10,
-                  fontSize: 18,
-                  borderRadius: 10,
-                  textAlign: "center",
-                }}
-              >
-                onPressOut()
-              </Text>
+              <Text style={appStyle.onPressButton}>onPressOut()</Text>
             </Pressable>
 
             <Pressable
@@ -207,34 +174,13 @@ export default function HomeScreen() {
                 console.log("onLongPress | Text Pressed");
               }}
             >
-              <Text
-                style={{
-                  backgroundColor: "mintcream",
-                  color: "#262626",
-                  padding: 10,
-                  marginTop: 10,
-                  fontSize: 18,
-                  borderRadius: 10,
-                  textAlign: "center",
-                }}
-              >
-                onLongPress()
-              </Text>
+              <Text style={appStyle.onPressButton}>onLongPress()</Text>
             </Pressable>
           </View>
         </View>
 
         <View>
-          <Text
-            style={{
-              fontSize: 20,
-              marginTop: 20,
-              fontWeight: 600,
-              color: "#f5f5f5",
-            }}
-          >
-            ReactNative Modal Popup
-          </Text>
+          <Text style={appStyle.text}>ReactNative Modal Popup</Text>
 
           <Pressable
             style={{ width: "50%" }}
@@ -243,31 +189,10 @@ export default function HomeScreen() {
               setIsModalVisible(true);
             }}
           >
-            <Text
-              style={{
-                backgroundColor: "mintcream",
-                color: "#262626",
-                padding: 10,
-                marginTop: 10,
-                fontSize: 18,
-                borderRadius: 10,
-                textAlign: "center",
-              }}
-            >
-              Open Popup Modal
-            </Text>
+            <Text style={appStyle.onPressButton}>Open Popup Modal</Text>
           </Pressable>
 
-          <Text
-            style={{
-              fontSize: 20,
-              marginTop: 20,
-              fontWeight: 600,
-              color: "#f5f5f5",
-            }}
-          >
-            StatusBar Visibility
-          </Text>
+          <Text style={appStyle.text}>StatusBar Visibility</Text>
 
           <Pressable
             style={{ width: "50%" }}
@@ -276,17 +201,7 @@ export default function HomeScreen() {
               console.log(isStatusBarVisible);
             }}
           >
-            <Text
-              style={{
-                backgroundColor: "mintcream",
-                color: "#262626",
-                padding: 10,
-                marginTop: 10,
-                fontSize: 18,
-                borderRadius: 10,
-                textAlign: "center",
-              }}
-            >
+            <Text style={appStyle.onPressButton}>
               {!isStatusBarVisible ? " Hide Statusbar " : " Show Statusbar "}
             </Text>
           </Pressable>
@@ -296,20 +211,11 @@ export default function HomeScreen() {
           <Text style={appStyle.text}>
             Activity Indicator | Content Loader:
           </Text>
-          <ActivityIndicator size="large" color="#ffffff" animating={true} />
+          <ActivityIndicator size="large" color="#000000" animating={true} />
         </View>
 
         <View>
-          <Text
-            style={{
-              fontSize: 20,
-              marginTop: 20,
-              fontWeight: 600,
-              color: "#f5f5f5",
-            }}
-          >
-            Alert Component
-          </Text>
+          <Text style={appStyle.text}>Alert Component</Text>
 
           {/* Alert has limit of 3 action button only */}
           <Pressable
@@ -338,20 +244,7 @@ export default function HomeScreen() {
               ]);
             }}
           >
-            <Text
-              style={{
-                backgroundColor: "mintcream",
-                color: "#262626",
-                padding: 10,
-                marginTop: 10,
-                fontSize: 18,
-                borderRadius: 10,
-
-                textAlign: "center",
-              }}
-            >
-              Alert Popup
-            </Text>
+            <Text style={appStyle.onPressButton}>Alert Popup</Text>
           </Pressable>
         </View>
 
@@ -392,10 +285,56 @@ export default function HomeScreen() {
           </View>
         </View>
 
+        <View>
+          <Text style={appStyle.text}>IOS Box Shadow and Elevation</Text>
+          <View
+            style={{ display: "flex", flexDirection: "row", marginTop: 10 }}
+          >
+            <View
+              style={[
+                appStyle.shadowBox1,
+                appStyle.boxShadow,
+                appStyle.androidShadow,
+              ]}
+            ></View>
+            <View style={[]}></View>
+          </View>
+        </View>
+
+        <View>
+          <Text style={appStyle.text}>React Native Style : Flexbox</Text>
+          <View
+            style={{
+              marginTop: 10,
+              borderWidth: 2,
+              flex: 1,
+              borderColor: "#262626",
+            }}
+          >
+            <FlexBox styleProp={{ backgroundColor: "blueviolet" }}>
+              Box 1
+            </FlexBox>
+
+            <FlexBox styleProp={{ backgroundColor: "blue" }}>Box 2</FlexBox>
+
+            <FlexBox styleProp={{ backgroundColor: "tomato" }}>Box 3</FlexBox>
+
+            <FlexBox styleProp={{ backgroundColor: "crimson" }}>Box 4</FlexBox>
+
+            <FlexBox styleProp={{ backgroundColor: "navy" }}>Box 5</FlexBox>
+
+            <FlexBox styleProp={{ backgroundColor: "deeppink" }}>Box 6</FlexBox>
+          </View>
+        </View>
+
+        <View style={{ marginBottom: 50 }}></View>
+
         {/* <StylesheetComponent /> */}
       </ScrollView>
 
       {/* By default modal visible is true and animation type is none */}
+
+      {/* Popup Modal */}
 
       <Modal
         visible={isModalVisible}
