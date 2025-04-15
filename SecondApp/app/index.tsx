@@ -14,10 +14,12 @@ export default function Index() {
           <FlexBoxTest style={{ backgroundColor: "palevioletred" }}>
             Box 4
           </FlexBoxTest>
-          {/* <FlexBoxTest style={{ backgroundColor: "chocolate" }}>
+          {/* <FlexBoxTest
+            style={{ backgroundColor: "chocolate", alignSelf: "auto" }}
+          >
             Box 5
-          </FlexBoxTest>
-          <FlexBoxTest style={{ backgroundColor: "salmon" }}>Box 6</FlexBoxTest> */}
+          </FlexBoxTest> */}
+          {/* <FlexBoxTest style={{ backgroundColor: "salmon" }}>Box 6</FlexBoxTest> */}
         </View>
       </SafeAreaView>
     </View>
@@ -36,6 +38,6 @@ export const appStyle = StyleSheet.create({
     // justifyContent: "center",
     // by default works on the row axis / cross axis / x axis / horizontal axis
 
-    alignItems: "stretch",
+    // alignItems: "center",
   },
 });
