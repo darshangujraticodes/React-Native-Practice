@@ -20,5 +20,8 @@ const BoxStyle = StyleSheet.create({
     padding: 10,
     // borderRadius: 5,
     // marginVertical: 2,
+
+    width: 150,
+    height: 60,
   },
 });
