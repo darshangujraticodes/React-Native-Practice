@@ -29,7 +29,7 @@ const HomeResponsiveDevice = () => {
   //   const windowWidth = window.width;
   //   const windowHeight = window.height;
 
-  //   newMethod
+  //   newMethod using useWindowDimension() hook is recommended way
 
   const windowWidth = useWindowDimensions().width;
   const windowHeight = useWindowDimensions().height;
