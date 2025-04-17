@@ -13,7 +13,6 @@ Note :
 eg. View has text tag so parent view component style will not be implemented in child text component
 eg. but if text has child text component then child text can will inherit parent style
 
-
 5] While applying css it works in 2 types : main axis and cross axis 
 in web main axis is horizontal(left to right) and cross axis is vertical(top to bottom)
 in mobile main axis is vertical (top to bottom) and cross axis is horizontal (left to right)
