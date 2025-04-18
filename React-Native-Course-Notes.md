@@ -52,3 +52,7 @@ It has 2 implementation methods
 
 When you want to embed code specificaly for particular platform we use this platform hooks to write that specific code
 Code sample : `marginTop: Platform.OS === "android" ? 25 : 0`
+
+### List style
+
+Always use Flatlist becoz it is lazy loaded and save memory and boost performance becoz it
