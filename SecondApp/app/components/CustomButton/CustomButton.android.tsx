@@ -1,6 +1,6 @@
 import { Pressable, Text, View } from "react-native";
 
-const CustomButton = ({ title }) => {
+const CustomButton = ({ title }: { title: string }) => {
   const clickHandle = () => {
     alert("Android Button Clicked !");
   };
