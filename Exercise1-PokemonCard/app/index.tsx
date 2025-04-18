@@ -57,7 +57,7 @@ export default function Index() {
               pokeTypeIcon={IconData.plantIcon}
               pokeType="Plants"
               pokeMoves="Vine Whip, Razor Leaf"
-              pokeWeakness=" Fire, Rock"
+              pokeWeakness="Fire, Rock"
               style={{ borderColor: "green" }}
             />
           </View>

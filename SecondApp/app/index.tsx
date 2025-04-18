@@ -7,8 +7,8 @@ import PlatformApi from "./components/PlatformApi";
 export default function Index() {
   return (
     <View style={{ flex: 1 }}>
-      {/* <HomeFlexBox /> */}
-      {/* <HomeResponsiveDevice /> */}
+      {/* <HomeFlexBox />
+      <HomeResponsiveDevice /> */}
 
       <PlatformApi />
     </View>
