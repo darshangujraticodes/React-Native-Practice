@@ -56,3 +56,9 @@ Code sample : `marginTop: Platform.OS === "android" ? 25 : 0`
 ### List style
 
 Always use Flatlist becoz it is lazy loaded and save memory and boost performance becoz it
+
+### Short Command for react native extension to generate default boilder plate code
+
+rafce : This command will generate starter react boiler plate code in arrow function
+
+rnfe : This command will generate starter react native boiler plate code in arrow function

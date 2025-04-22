@@ -7,15 +7,17 @@ import ListComponent from "./components/ListComponent";
 import SectionListComponent from "./components/SectionListComponent";
 import NativeForms from "./components/NativeForms";
 import LoginForm from "./components/LoginForm";
+import CrudNetworking from "./components/CrudNetworking";
 
 export default function Index() {
   return (
     <SafeAreaView
       style={{
         flex: 1,
-        paddingHorizontal: 8,
+        padding: 5,
+        paddingVertical: 10,
 
-        justifyContent: "center",
+        // justifyContent: "center",
         backgroundColor: "#f5f5f5",
       }}
     >
@@ -29,7 +31,9 @@ export default function Index() {
 
       {/* <NativeForms /> */}
 
-      <LoginForm />
+      {/* <LoginForm /> */}
+
+      <CrudNetworking />
     </SafeAreaView>
   );
 }

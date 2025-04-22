@@ -47,7 +47,7 @@ const ListComponent = () => {
             );
           }}
           keyExtractor={(item) => item.id.toString()}
-          ItemSeparatorComponent={<View style={{ height: 13 }} />}
+          // ItemSeparatorComponent={<View style={{ height: 13 }} />}
           ListEmptyComponent={
             <View style={{ justifyContent: "center", alignItems: "center" }}>
               <Text>No Items Found</Text>
