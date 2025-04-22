@@ -18,7 +18,7 @@ type PokemonListType = {
 
 const ListComponent = () => {
   return (
-    <SafeAreaView style={listStyle.safeAreaContainer}>
+    <View style={listStyle.safeAreaContainer}>
       {/* this */}
       {/* <ScrollView style={listStyle.scrollViewContainer}>
         {pokemonList?.map((pokemon) => {
@@ -79,7 +79,7 @@ const ListComponent = () => {
           // horizontal={true}
         />
       </View>
-    </SafeAreaView>
+    </View>
   );
 };
 

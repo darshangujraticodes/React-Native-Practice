@@ -1,0 +1,34 @@
+[
+  {
+    "type": "Grass",
+    "data": ["Bulbasaur", "Venusaur", "Ivysaur"]
+  },
+  {
+    "type": "Fire",
+    "data": ["Charmander", "Charmeleon", "Charizard"]
+  },
+  {
+    "type": "Water",
+    "data": ["Squirtle", "Wartortle", "Blastoise"]
+  },
+  {
+    "type": "Rock",
+    "data": ["Bulbasaur", "Venusaur", "Ivysaur"]
+  },
+  {
+    "type": "Electric",
+    "data": ["Pikachu", "Raichu", "Electrode"]
+  },
+  {
+    "type": "Psychic",
+    "data": ["Kadabra", "Abra", "Alakazam"]
+  },
+  {
+    "type": "Ghost",
+    "data": ["Gastly", "Haunter", "Gengar"]
+  },
+  {
+    "type": "Fighting",
+    "data": ["Machop", "Machamp", "Machoke"]
+  }
+]
