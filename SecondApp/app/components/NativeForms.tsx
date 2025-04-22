@@ -1,8 +1,16 @@
 import { useState } from "react";
-import { View, Text, StyleSheet, TextInput } from "react-native";
+import { View, Text, StyleSheet, TextInput, Switch } from "react-native";
 
 const NativeForms = () => {
   const [name, setName] = useState("");
+
+  const [isFirstOn, setIsFirstOn] = useState(false);
+  const [isSecondOn, setIsSecondOn] = useState(true);
+  const [isThirdOn, setIsThirdOn] = useState(false);
+
+  const firstSwitch = () => {
+    setIsFirstOn((prevState) => !prevState);
+  };
 
   return (
     <View style={{}}>
@@ -47,6 +55,35 @@ const NativeForms = () => {
         />
 
         {/* multi line input */}
+
+        {/* switch : it help to build toggle function of on and off which help user to choose anyone options from 2 data  */}
+
+        <View style={{}}>
+          <View style={[formStyle.switchContainer]}>
+            <Text style={formStyle.switchText}>
+              First Switch: {isFirstOn ? "ON" : "OFF"} :
+            </Text>
+            <Switch value={isFirstOn} onValueChange={firstSwitch} />
+          </View>
+          <View style={[formStyle.switchContainer]}>
+            <Text style={formStyle.switchText}>
+              Second Switch: {isSecondOn ? "ON" : "OFF"} :
+            </Text>
+            <Switch
+              value={isSecondOn}
+              onValueChange={() => setIsSecondOn((prev) => !prev)}
+            />
+          </View>
+          <View style={[formStyle.switchContainer]}>
+            <Text style={formStyle.switchText}>
+              Third Switch: {isThirdOn ? "ON" : "OFF"} :
+            </Text>
+            <Switch
+              value={isThirdOn}
+              onValueChange={() => setIsThirdOn((prev) => !prev)}
+            />
+          </View>
+        </View>
       </View>
     </View>
   );
@@ -76,5 +113,16 @@ const formStyle = StyleSheet.create({
     minHeight: 90,
     // Note Multiline input text wrap input text in top in iOS and center in android so use below
     textAlignVertical: "top",
+  },
+
+  switchContainer: {
+    flexDirection: "row",
+    justifyContent: "flex-start",
+    alignItems: "center",
+    marginTop: 8,
+  },
+
+  switchText: {
+    fontSize: 20,
   },
 });

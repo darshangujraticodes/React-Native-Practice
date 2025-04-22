@@ -6,21 +6,30 @@ import PlatformApi from "./components/PlatformApi";
 import ListComponent from "./components/ListComponent";
 import SectionListComponent from "./components/SectionListComponent";
 import NativeForms from "./components/NativeForms";
+import LoginForm from "./components/LoginForm";
 
 export default function Index() {
   return (
-    <SafeAreaView style={{ flex: 1, paddingHorizontal: 8 }}>
-      <ScrollView>
-        {/* <HomeFlexBox />
-      <HomeResponsiveDevice /> */}
+    <SafeAreaView
+      style={{
+        flex: 1,
+        paddingHorizontal: 8,
 
-        {/* <PlatformApi /> */}
-        {/* <ListComponent /> */}
+        justifyContent: "center",
+        backgroundColor: "#f5f5f5",
+      }}
+    >
+      {/* <HomeFlexBox />
+        <HomeResponsiveDevice /> */}
 
-        {/* <SectionListComponent /> */}
+      {/* <PlatformApi /> */}
+      {/* <ListComponent /> */}
 
-        <NativeForms />
-      </ScrollView>
+      {/* <SectionListComponent /> */}
+
+      {/* <NativeForms /> */}
+
+      <LoginForm />
     </SafeAreaView>
   );
 }
