@@ -8,6 +8,9 @@ import SectionListComponent from "./components/SectionListComponent";
 import NativeForms from "./components/NativeForms";
 import LoginForm from "./components/LoginForm";
 import CrudNetworking from "./components/CrudNetworking";
+import NativeNavigation from "./components/NativeNavigation";
+
+import { NavigationContainer } from "@react-navigation/native";
 
 export default function Index() {
   return (
@@ -21,17 +24,19 @@ export default function Index() {
         backgroundColor: "#f5f5f5",
       }}
     >
-      {/* <HomeFlexBox />
-        <HomeResponsiveDevice /> */}
+      <ScrollView>
+        {/* <HomeFlexBox />
+        <HomeResponsiveDevice />
 
-      {/* <PlatformApi /> */}
-      {/* <ListComponent /> */}
+        <PlatformApi />
+        <ListComponent />
 
-      {/* <SectionListComponent /> */}
+        <SectionListComponent />
 
-      {/* <NativeForms /> */}
+        <NativeForms />
 
-      {/* <LoginForm /> */}
+        <LoginForm /> */}
+      </ScrollView>
 
       <CrudNetworking />
     </SafeAreaView>

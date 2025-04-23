@@ -55,10 +55,32 @@ Code sample : `marginTop: Platform.OS === "android" ? 25 : 0`
 
 ### List style
 
-Always use Flatlist becoz it is lazy loaded and save memory and boost performance becoz it
+- Always use Flatlist becoz it is lazy loaded and save memory and boost performance becoz it
+- List style is of 2 types in react native flatlist and sectionlist (industry recommended practice is flatlist)
 
 ### Short Command for react native extension to generate default boilder plate code
 
 rafce : This command will generate starter react boiler plate code in arrow function
 
 rnfe : This command will generate starter react native boiler plate code in arrow function
+
+### Form handling
+
+1. TextInput : To get user input text (TextInput has mulitple options example secureTextEntry, KeyboardType, onChangeText() )
+2. switch : Toggle button to help user to choose single option from 2
+3. Activity Indicator : It help showcase loading effect if data is submitting to server
+
+### API GET and POST request work similar to javascript handle through try catch, async function and through useState and useEffect Hooks
+
+### Navigation
+
+It helps to traverse between multiple pages in app
+
+React Navigation works in both ways
+
+1. React Native which uses (Stack, Drawer, and Tab Navigators)
+   - Stack Navigator provides way of your app transition between screen where each new screen is placed on top of Stack.
+     - Stack Navigators and Native Stack Navigators
+   - drawer Navigator provides the side bar which opens up from side of the screen which can be opened and closed via gestures.
+   - Tab Navigators : It is the bottom menu navigators which get displayed when user select any tab
+2. Expo ways
