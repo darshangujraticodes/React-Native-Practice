@@ -11,16 +11,21 @@ import CrudNetworking from "./components/CrudNetworking";
 import NativeNavigation from "./components/NativeNavigation";
 
 import { NavigationContainer } from "@react-navigation/native";
+import { createNativeStackNavigator } from "@react-navigation/native-stack";
+import HomeScreen from "@/Screens/HomeScreen";
+import AboutScreen from "@/Screens/AboutScreen";
+import ContactScreen from "@/Screens/ContactScreen";
 
 export default function Index() {
+  const Stack = createNativeStackNavigator();
+
   return (
     <SafeAreaView
       style={{
-        flex: 1,
+        // flex: 1,
         padding: 5,
         paddingVertical: 10,
 
-        // justifyContent: "center",
         backgroundColor: "#f5f5f5",
       }}
     >

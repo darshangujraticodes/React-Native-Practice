@@ -3,7 +3,7 @@ import { View, Text, StyleSheet } from "react-native";
 const ContactScreen = () => {
   return (
     <View style={style.container}>
-      <Text style={style.text}>HomeScreen</Text>
+      <Text style={style.text}>Contact Screen</Text>
     </View>
   );
 };
@@ -19,5 +19,6 @@ const style = StyleSheet.create({
   text: {
     fontSize: 20,
     fontWeight: 600,
+    marginTop: 50,
   },
 });
